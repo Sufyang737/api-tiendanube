@@ -27,4 +27,4 @@ ENV MONGODB_NAME=test
 EXPOSE 8000
 
 # Comando para iniciar la aplicación
-CMD ["npm", "start:dev"]
+CMD ["npm", "start:api"]
