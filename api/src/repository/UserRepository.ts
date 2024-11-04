@@ -4,7 +4,9 @@ import low from "lowdb";
 import FileSync from "lowdb/adapters/FileSync";
 import { TiendanubeAuthInterface } from "@features/auth";
 import { HttpErrorException } from "@utils";
-import CredentialModel, { ICredentials } from "src/models/credentials";
+import CredentialModel, {
+  ICredentials,
+} from "@features/auth/credentials.model";
 
 /**
  * this repository is temporary, please use real database to production mode

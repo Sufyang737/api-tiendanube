@@ -1,4 +1,6 @@
-import CustomizationModel, { ICustomizations } from "src/models/customizations";
+import CustomizationModel, {
+  ICustomizations,
+} from "@features/customizations/customizations.model";
 
 class CustomizationService {
   public async createCustomization(

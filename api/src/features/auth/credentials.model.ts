@@ -5,7 +5,6 @@ export interface ICredentials extends Document {
   token_type: string;
   scope: string;
   user_id: number;
-  createdAt?: Date;
 }
 
 const credentialSchema = new Schema<ICredentials>({
@@ -24,11 +23,6 @@ const credentialSchema = new Schema<ICredentials>({
   user_id: {
     type: Number,
     required: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-    expires: 3600, // Expiración automática opcional (en segundos)
   },
 });
 

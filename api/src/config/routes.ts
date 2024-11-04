@@ -5,6 +5,9 @@ import { ProductController } from "@features/product";
 import { checkUserCredentialsMiddleware } from "@middlewares";
 
 const routes = Router();
+routes.get("/hola", (req, res) => {
+  res.send("its Alive");
+});
 routes.get("/auth/install", AuthenticationController.install);
 routes.post("/auth/login", AuthenticationController.login);
 routes.param("user_id", checkUserCredentialsMiddleware);
